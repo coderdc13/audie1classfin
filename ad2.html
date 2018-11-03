@@ -1,0 +1,226 @@
+<!--+++ initial format all from repl.it; all javascript and related html from T1CG class exercises-->
+<!DOCTYPE HTML> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel=stylesheet href="ad2.css" type="text/css" />
+    <title>
+        Audie Murphy Tribute Website
+    </title>
+</head>
+<style>
+</style>
+<body id="">
+    <main>
+        <h3 id="audietitle" onclick="changeHeader()">
+            Audie Murphy Tribute Website
+        </h3>
+        <a href="https://en.wikipedia.org/wiki/Audie_Murphy" target="_blank"><img src="https://cdn-images-1.medium.com/max/1600/1*603B7ePJ2uKFgQINuW4weg.jpeg"></a>
+        <h5>
+            <a href="https://en.wikipedia.org/wiki/Audie_Murphy" target="_blank">
+                Audie Murphy
+            </a>
+        </h5>
+        <marquee>
+            <h4>
+                Welcome to the Audie Murphy Tribute Website!!!
+            </h4>
+        </marquee>
+        
+        <p>
+            Facts and Factota
+        </p>
+        <div class="dvlst">
+            <ul>
+                <li>
+                    Born Audie Leon Murphy, 20 June 1925 (Kingston, TX), the seventh of twelve children.
+                </li>
+                <li>
+                    Audie Murphy's childhood--father deserted entire family, mother died of pneumonia. 
+                </li>
+                <li>
+                    Enlisted in the US Army while underage and underweight, but finished World War II as one of its most decorated soldiers.
+                </li>
+            </ul>
+        </div>
+        <table align="center">
+            <tr>
+                <th>
+                    <strong>Film</strong>
+                </th>
+                <th>
+                    <strong>Year</strong>
+                </th>
+                <th>
+                    <strong>Did This Film ABSOLUTELY Dominate Cinema for the Year?</strong>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Bad_Boy_(1949_film)" target="_blank">Bad Boy</a>
+                </td>
+                <td>
+                   <h6>1949</h6>
+                </td>
+                <td>
+                    YES!
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Kid_from_Texas" target="_blank">The Kid from Texas</a>
+                </td>
+                <td>
+                    <h6>1950</h6>
+                </td>
+                <td>
+                    But of Course.
+                </td>
+            </tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/The_Cimarron_Kid" target="_blank">The Cimarron Kid</a>
+            </td>
+            <td>
+                <h6>1952</h6>
+            </td>
+            <td>
+                You Bet Your Stars and Garters!
+            </td>
+        </table>
+        <h6>
+            Enter the Date
+        </h6>
+        <form action="/action_page.php">
+        <!--from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_date-->
+        Date: <input type="date" name="day">
+        <input type="submit">
+        </form>
+        <form action="/provide_feedback">
+            <input type="text" placeholder="feedback">
+            <button type="submit">Submit</button>
+        </form>
+        <h2>
+            <a href="https://www.youtube.com/watch?v=q1c-UnoeYSg" target="_blank">Audie Murphy Interview</a>
+        </h2>
+        <h2>
+            <a href="https://www.youtube.com/watch?v=asKJelrnDu4" target="_blank">Audie Murphy Tribute</a>
+        </h2>
+        <h2>
+            <a href="https://www.youtube.com/watch?v=ZX2PbzV1go8" target="_blank">Audie Murphy Biosketch</a>
+        </h2>
+
+        <div class="vdcb">
+            <iframe width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)>
+            </iframe>
+        </div>
+    </main>
+
+    <button onclick="this.innerHTML='Changed Text'">Click Me</button>
+    <button onclick="showDate()">Show Date</button>
+    <h1 id="dateHeader">
+
+    </h1>
+<div>
+    <label>
+        Background
+    </label>
+    <select onchange="changeBackground(this)" name="background" id="background">
+        <option value="red">Red </option>
+
+       <option value="blue">Blue</option> 
+    <option value="green">Green </option>
+    </select>
+    </div>
+
+
+
+
+
+
+
+
+
+
+       <table align="center">
+            <tr>
+                <th>
+                    <!-- <strong>Film</strong> -->
+                    <button onclick="myFunction()">Try it</button>
+
+                    <p id="demo"></p>
+                </th>
+                <th>
+                    <strong>Year</strong>
+                </th>
+                <th>
+                    <strong>Did This Film ABSOLUTELY Dominate Cinema for the Year?</strong>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/Bad_Boy_(1949_film)" target="_blank">Bad Boy</a>
+                </td>
+                <td>
+                   <h6>1949</h6>
+                </td>
+                <td>
+                    YES!
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/The_Kid_from_Texas" target="_blank">The Kid from Texas</a>
+                </td>
+                <td>
+                    <h6>1950</h6>
+                </td>
+                <td>
+                    But of Course.
+                </td>
+            </tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/The_Cimarron_Kid" target="_blank">The Cimarron Kid</a>
+            </td>
+            <td>
+                <h6>1952</h6>
+            </td>
+            <td>
+                You Bet Your Stars and Garters!
+            </td>
+        </table>
+        <!-- below construction for button for trivia -->
+        <div><button class="centerClass" id="trivia">Play Trivia</button></div>
+        <!-- above construction for button for trivia -->
+
+        <!-- below construction for button for toggle  -->
+        <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjW9vKoxLjeAhWlSt8KHVSdD4kQjRx6BAgBEAU&url=https%3A%2F%2Fkittenrescue.org%2F2017%2F03%2Fkeeping-kittens-healthy-six-weeks-four-months-old%2F&psig=AOvVaw1wIOsHXylt96NBmb6Y9c1p&ust=1541345160819658" />
+        <iframe class="displayClass" width="806" heigth="453" src="https://www.youtube.com/watch?v=wF1F1kRTpWE">
+        movie
+        </iframe>
+        <button onclick="showMe()">clickme</button>
+        <div>
+            <button class="centerClass" set button id>Picture Video Toggle</button>
+        </div>
+        <!-- above construction for button for toggle -->
+
+        <!-- below construction for table adding task -->
+
+        <table id="movieTable">
+            
+          </table>
+          <input class="centerClass" id="titleInput" placeholder="title"></input>
+          <input class="centerClass" id="yearInput" placeholder="year"></input>
+          <button class="centerClass" id="tableButton">Add Movie to Table</button>
+
+        <!-- above construction for table adding task -->
+        <blink>Audie Murphy Is Cool</blink>
+        
+</body>
+
+
+
+<script src="ad2.js">
+
+</script>
+
+</html>

@@ -9,7 +9,7 @@ function changeHeader() {
 
 triviaFunc = () => {
     alert("Here is a quiz; please enter the letter for the corresponding answer.");
-    const value1 = prompt("In what state was Audie Murphy born? a: Texas b: Alabama c: Commonwealth of Virginia");
+    const value1 = prompt("In what state was Audie Murphy born? a: Texas b: Kentucky Commonwealth c: Commonwealth of Virginia");
     if (value1 === "a") {
         alert("Correct!");
     } else {
